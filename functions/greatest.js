@@ -19,12 +19,14 @@ function greatest(num1, num2, num3) {
         return console.log(`${num1} and ${num3} are tied for the greatest value`)
     } else if (num1 === num2) {
         return console.log(`${num1} and ${num2} are tied for the greatest value`)
+    } else {
+        return console.log("Huh? What is this test case that I forgot to account for?");
     }
 }
 
 console.log(greatest(num1, num2, num3))
 
-// https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box this appears to solve my issue with strings being converted to 0. 
+// https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box this appears to solve my issue with strings being converted to 0. the + typecast is not necessary, and parseInt() is also not necessary, it seems.
 
 // okay, i just had to rearrange one more set of conditional statements in order to get the functionality i need. But the console is still outputting "undefined" underneath the correct output for each test case. 
 

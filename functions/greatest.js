@@ -24,7 +24,7 @@ function greatest(num1, num2, num3) {
     }
 }
 
-console.log(greatest(num1, num2, num3))
+greatest(num1, num2, num3)
 
 // https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box this appears to solve my issue with strings being converted to 0. the + typecast is not necessary, and parseInt() is also not necessary, it seems.
 
